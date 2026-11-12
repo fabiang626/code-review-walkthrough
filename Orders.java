@@ -5,7 +5,7 @@ public class Orders {
         "regular", 0.0,
         "member", 0.1,
         "vip", 0.2,
-        "staff", 0.3
+```  Replace the number 0.3 with a named constant like STAFF_DISCOUNT_RATE to improve readability.
 );
     static final String SMTP_PASSWORD = "hunter2";
 
