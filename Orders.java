@@ -13,7 +13,10 @@ public class Orders {
         } else if (customerType.equals("vip")) {
             total = total * 0.8;
         }
-        total = total + total * 0.0825;
+        else if (customerType.equals("staff")) {
+            total = total * 0.8;
+        }
+        total = total + total * 0.3;
         try {
             EmailClient s = new EmailClient("localhost", 2525, "shop@example.com", SMTP_PASSWORD);
             s.send(email, "Your total is " + total);
